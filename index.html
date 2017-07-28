@@ -31,8 +31,8 @@
                 /*the following code checkes whether the entered userid and password are matching*/
                 if(form.userid.value == "admin" && form.pswrd.value == "admin123") {
 					
-				
-                    window.open('inicio.html')/*opens the target page while Id & password matches*/
+		window.location.href = 'inicio.html';
+                    
                 }
                 else {
                     alert("Error Password or Username")/*displays error message*/
