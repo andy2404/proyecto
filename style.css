@@ -17,7 +17,11 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	background: transparent;
 }
 body {
-	background: #DCDDDF url(http://usersthink.com/wp-content/uploads/31-usersthink-stock-image-small.jpg);
+	background: #DCDDDF url(http://usersthink.com/wp-content/uploads/31-usersthink-stock-image-small.jpg);no-repeat center center fixed;
+        background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
 	color: #000;
 	font: 14px Arial;
 	margin: 0 auto;
