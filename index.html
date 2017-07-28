@@ -14,30 +14,30 @@
 		<form action="">
 			<h1>Login</h1>
 			<div>
-				<input type="text" placeholder="Username" required=""  name = "userid"/>
+				<input type="text" placeholder="Username" required=""  name="id"/>
 			</div>
 			<div>
-				<input type="password" placeholder="Password" required=""  name="pswrd"/>
+				<input type="password" placeholder="Password" required=""  name="pass"/>
 			</div>
 			<div>
-				<input type="submit" onclick="check(this.form)" value="Login" />
+				<input type="button" value="Login" onClick="pasuser(this.form)">
                                 
 				<a href="#">Lost your password?</a>
 				<a href="#">Register</a>
 			</div>
 		</form><!-- form -->
         <script language="javascript">
-            function check(form) { /*function to check userid & password*/
-                /*the following code checkes whether the entered userid and password are matching*/
-                if(form.userid.value == "admin" && form.pswrd.value == "admin123") {
-					location="inicio.html" 
-		
-                    
-                }
-                else {
-                    alert("Error Password or Username")/*displays error message*/
-                }
-            }
+            function pasuser(form) {
+		if (form.id.value=="admin") { 
+		if (form.pass.value=="admin123") {              
+		location="inicio.html" 
+			} else {
+		alert("Invalid Password")
+		}
+		} else {  alert("Invalid UserID")
+		}
+			}
+//-->
         </script>
         
        <script type="text/javascript">
